@@ -1,0 +1,180 @@
+h2 {
+  font-family: var(--heading-font-family);
+  font-size: 90px;
+  color: var(--heading-font-color);
+  margin-bottom: 20px;
+}
+
+/* ------------ HERO SECTION ------------*/
+
+.heroSection {
+  width: 100%;
+  max-width: 1280px;
+  height: 630px;
+  margin: 50px 0;
+
+  background-image: url("../../assets/desktop-hero-bg.png");
+
+  display: flex;
+  align-items: center;
+}
+
+.heroSection div {
+  width: 600px;
+  color: #fff;
+  margin-left: 80px;
+}
+
+.heroSection h1 {
+  font-family: var(--heading-font-family);
+  font-size: 80px;
+  line-height: 1;
+  margin: 30px 0;
+}
+
+.heroSection p {
+  width: 450px;
+  font-family: var(--body-font-family);
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.heroSection a {
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+
+  background-color: #70997c;
+
+  width: 150px;
+  border-radius: 6px;
+  padding: 15px 5px;
+
+  font-family: var(--body-font-family);
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+
+  z-index: 3;
+}
+
+.heroSection a:hover {
+  background-color: #56755f;
+}
+
+/* ------------ COMMITMENT SECTION ------------*/
+
+.commitmentSection {
+  width: 100%;
+  max-width: 1280px;
+  margin: 150px 0;
+}
+
+.commitmentSection p {
+  font-family: var(--body-font-family);
+  font-size: 18px;
+}
+
+.commitmentCardWrapper {
+  margin: 50px 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.cardTwo {
+  position: relative;
+  top: 30px;
+}
+
+.cardThree {
+  position: relative;
+  top: 60px;
+}
+
+/* ------------ COLLECTION SECTION ------------*/
+
+.collections {
+  padding: 50px 0;
+}
+
+/* ------------ WhHAT WE DO SECTION ------------*/
+
+.aboutUs {
+  height: 1400px;
+  padding: 50px 0;
+}
+
+.aboutUsContent {
+  position: relative;
+}
+
+.designStudio {
+  width: 380px;
+  position: absolute;
+  top: 90px;
+  left: 200px;
+}
+
+.designStudio h5,
+.virtualRoastery h5 {
+  font-family: var(--body-font-family);
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  margin-bottom: 40px;
+}
+
+.designStudio p,
+.virtualRoastery p {
+  font-family: var(--body-font-family);
+  line-height: 1.8;
+}
+
+.designImg {
+  height: 600px;
+  width: 460px;
+  background-image: url("../../assets/desktop-design-office.png");
+
+  position: absolute;
+  top: 80px;
+  right: 40px;
+}
+
+.designQuote {
+  height: 480px;
+  width: 580px;
+
+  position: absolute;
+  top: 450px;
+}
+
+.designQuote p {
+  font-family: var(--heading-font-family);
+  font-size: 80px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.virtualRoastery {
+  width: 500px;
+
+  position: absolute;
+  top: 800px;
+  right: 70px;
+}
+
+/* ------------ PURPOSE SECTION ------------*/
+
+.ourPurpose p {
+  font-family: var(--body-font-family);
+  font-size: 18px;
+  max-width: 800px;
+  line-height: 1.8;
+}
+
+.purposeCardWrapper {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 50px 0;
+}
