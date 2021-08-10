@@ -1,8 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { Link } from 'react-scroll';
 
-import { nav, logo, links } from './navbar.module.css'; 
+import Menu from '../../assets/icon-hamburger.svg';
+import Close from '../../assets/icon-close.svg'
+
+import { nav, logo, burgerDiv,  navLinksOpen, navLinksClosed } from './navbar.module.css'; 
 
 const Navbar = () => {
+
+    const [isOpen, setOpen] = useState(false);
+
+    const handleNav = () => {
+        setOpen(!isOpen);
+    }
+
+    const closeMobileMenu = () => setOpen(false)
+
     return ( 
         <nav className={nav}>
             <div className={logo}>
@@ -10,22 +23,29 @@ const Navbar = () => {
                     vcr fulfillment
                 </h1>
             </div>
-            <div className={links}>
+
+            <div className={isOpen ? navLinksOpen : navLinksClosed}>
                 <ul>
                     <li>
-                        <a href="#whatWeDo">
-                            What we do
-                        </a>
+                        <Link onClick={closeMobileMenu} to="whatWeDo" spy={true} smooth={true} duration={2000} >
+                            what we do
+                        </Link>
                     </li>
                     <li>
-                        <a href="#purpose">
-                            Our purpose
-                        </a>
+                        <Link onClick={closeMobileMenu} to="purpose" spy={true} smooth={true} duration={2000}>
+                            our purpose
+                        </Link>
                     </li>
                 </ul>
+            </div>
+            
+            <div className={burgerDiv}>
+                <img id="burger-icon" onClick={handleNav} src={isOpen ? Close : Menu} alt="" />
             </div>
         </nav>
      );
 }
  
 export default Navbar;
+
+

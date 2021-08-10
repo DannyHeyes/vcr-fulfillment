@@ -2,7 +2,7 @@
   height: 122px;
 
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 70% 30%;
 }
 
 .logo {
@@ -13,31 +13,83 @@
 .logo h1 {
   font-family: var(--body-font-family);
   font-weight: 900;
-  font-size: 30px;
+  font-size: 18px;
   text-transform: uppercase;
 }
 
-.links {
+.navLinksOpen {
+  width: 100%;
+  height: 80vh;
   display: flex;
-  justify-content: flex-end;
+  flex-direction: column;
   align-items: center;
+
+  position: absolute;
+  top: 100px;
+  left: 0;
+
+  z-index: 1;
+
+  background: linear-gradient(#fffcf3 50%, transparent);
+  transition: 1s ease;
 }
 
-.links ul {
-  display: flex;
+.navLinksOpen ul {
   padding: 0;
+  margin-top: 50px;
 }
 
-.links li {
+.navLinksOpen li {
   list-style-type: none;
-  font-family: var(--body-font-family);
-  text-transform: uppercase;
-  font-size: 15px;
 
-  margin-left: 20px;
+  font-family: var(--body-font-family);
+  font-size: 24px;
+  text-transform: uppercase;
+  text-align: center;
+
+  margin-bottom: 100px;
 }
 
-.links a {
-  text-decoration: none;
-  color: #000;
+.navLinksClosed {
+  display: none;
+}
+
+.burgerDiv {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+/* ----------------- 768px BREAKPOINT ----------------*/
+
+@media screen and (min-width: 768px) {
+  .nav {
+    grid-template-columns: 50% 50%;
+  }
+
+  .navLinksClosed {
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .navLinksClosed ul {
+    display: flex;
+    padding: 0;
+  }
+
+  .navLinksClosed li {
+    list-style-type: none;
+
+    font-family: var(--body-font-family);
+    font-size: 14px;
+    text-transform: uppercase;
+
+    margin-left: 20px;
+  }
+
+  .burgerDiv {
+    display: none;
+  }
 }

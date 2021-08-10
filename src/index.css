@@ -4,18 +4,37 @@
   --heading-font-color: #4e3b2d;
 }
 
-html {
+/* html {
   scroll-behavior: smooth;
-}
+} */
 
 body {
   margin: 0;
   box-sizing: border-box;
   background: #fffcf3;
+  overflow-x: hidden;
 
   max-width: 1280px;
-  margin: 0 80px;
+  margin: 0 24px;
 }
+
+/* ----------------- 600px BREAKPOINT ----------------*/
+
+@media screen and (min-width: 600px) {
+  body {
+    margin: 0 40px;
+  }
+}
+
+/* ----------------- 1000px BREAKPOINT ----------------*/
+
+@media screen and (min-width: 1000px) {
+  body {
+    margin: 0 80px;
+  }
+}
+
+/* ----------------- 1440px BREAKPOINT ----------------*/
 
 @media screen and (min-width: 1440px) {
   body {

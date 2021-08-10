@@ -1,94 +1,220 @@
 /* ------------ COMMITMENT CARDS ------------ */
 
 .commitmentCard {
-  width: 350px;
-  height: 350px;
-  border: 2px solid #4e3b2d;
+  width: 317px;
+  border: 5px solid #4e3b2d;
   border-radius: 8px;
 }
 
 .commitmentCard h4 {
   font-family: var(--body-font-family);
   font-weight: 800;
-  font-size: 60px;
+  font-size: 48px;
   text-align: center;
   color: var(--heading-font-color);
 
-  margin: 40px 0 30px 0;
+  margin: 20px 0;
 }
 
 .commitmentCard p {
   font-family: var(--body-font-family);
   font-size: 18px;
   line-height: 1.7;
+  text-align: center;
   color: var(--heading-font-color);
+
   width: 80%;
-  margin: 10px auto;
+  margin: 0 auto 20px;
 }
 
 /* ------------ COLLECTION CARDS ------------ */
 
 .collectionCard {
-  width: 1000px;
-  height: 200px;
+  width: 326px;
+  height: 270px;
 
   display: flex;
-  justify-content: space-evenly;
-  margin: 90px auto;
+  flex-direction: column;
 }
 
 .collectionCard div {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .collectionCard img {
-  width: 180px;
+  width: 80px;
 }
 
 .collectionCard h5 {
   font-family: var(--body-font-family);
   color: var(--heading-font-color);
-  font-size: 50px;
+  font-size: 28px;
   font-weight: 900;
   text-transform: uppercase;
 
-  margin: 10px 0 0 0;
+  margin: 10px auto;
 }
 
 .collectionCard p {
-  width: 500px;
+  width: 90%;
   font-family: var(--body-font-family);
   color: var(--heading-font-color);
+  font-size: 14px;
   line-height: 1.8;
+  text-align: center;
+
+  margin: 0 auto;
 }
 
 /* ------------ PURPOSE CARDS ------------ */
 
 .purposeCard {
-  height: 350px;
-  width: 400px;
-  border-radius: 8px;
-
-  background-color: #70997c;
+  width: 327px;
 }
 
-.purposeCard h5,
-.purposeCard p {
-  color: #fff;
-  padding-left: 20px;
+.purposeCard h3 {
+  font-size: 40px;
+  margin: 0;
+  color: #70997c;
+  font-family: var(--body-font-family);
 }
 
 .purposeCard h5 {
-  font-size: 42px;
+  font-size: 24px;
   font-family: var(--body-font-family);
   text-transform: uppercase;
   width: 300px;
-  margin-bottom: 20px;
+  margin: 0;
 }
 
 .purposeCard p {
   font-family: var(--body-font-family);
   width: 85%;
+  font-size: 14px;
+}
+
+/* ----------------- 768px BREAKPOINT ----------------*/
+
+@media screen and (min-width: 768px) {
+  /* ------------ COMMITMENT CARDS ------------ */
+
+  .commitmentCard {
+    width: 100%;
+    max-width: 700px;
+    height: 180px;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .commitmentCard h4 {
+    font-size: 55px;
+  }
+
+  .commitmentCard p {
+    width: 50%;
+    margin: 0;
+    text-align: left;
+  }
+
+  /* ------------ COLLECTION CARDS ------------ */
+
+  .collectionCard {
+    width: 100%;
+    max-width: 700px;
+    height: 200px;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .collectionCard img {
+    width: 120px;
+    margin-left: 70px;
+  }
+
+  .collectionCard h5,
+  .collectionCard p {
+    text-align: left;
+    margin: 5px 20px;
+
+    width: 80%;
+  }
+
+  /* ------------ PURPOSE CARDS ------------ */
+
+  .purposeCard {
+    width: 380px;
+  }
+
+  .purposeCard h3 {
+    font-size: 50px;
+  }
+
+  .purposeCard h5 {
+    font-size: 32px;
+    width: 100%;
+  }
+
+  .purposeCard p {
+    width: 90%;
+  }
+}
+
+/* ----------------- 1000px BREAKPOINT ----------------*/
+
+@media screen and (min-width: 1000px) {
+  /* ------------ COMMITMENT CARDS ------------ */
+
+  .commitmentCard {
+    width: 250px;
+    height: 280px;
+
+    flex-direction: column;
+  }
+
+  .commitmentCard h4 {
+    font-size: 65px;
+
+    margin: 0;
+  }
+
+  .commitmentCard p {
+    width: 90%;
+    text-align: center;
+  }
+
+  /* ------------ COLLECTION CARDS ------------ */
+
+  .collectionCard {
+    max-width: 800px;
+  }
+  .collectionCard img {
+    width: 150px;
+  }
+
+  .collectionCard h5 {
+    font-size: 40px;
+  }
+
+  .collectionCard p {
+    font-size: 15px;
+  }
+}
+
+/* ----------------- 1200px BREAKPOINT ----------------*/
+
+@media screen and (min-width: 1200px) {
+  /* ------------ PURPOSE CARDS ------------ */
+
+  .purposeCard {
+    width: 330px;
+  }
+
+  .purposeCard h5 {
+    font-size: 28px;
+  }
 }

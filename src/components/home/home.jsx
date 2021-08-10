@@ -86,15 +86,15 @@ const Home = () => {
                     </CollectionCards>
                     <CollectionCards>
                         <div>
+                            <img src={coffeeBag} alt="" />
+                        </div>
+                        <div>
                             <h5>
                                 Fruits & Flowers 
                             </h5>
                             <p>
                                 Roasted beans that have a strong fruity and floral aromas targeting the consumers who are looking for a more exceptional product. 
                             </p>
-                        </div>
-                        <div>
-                            <img src={coffeeBag} alt="" />
                         </div>
                     </CollectionCards>
                     <CollectionCards>
@@ -154,14 +154,20 @@ const Home = () => {
                 </p>
                 <div className={purposeCardWrapper}>
                     <PurposeCards>
+                        <h3>
+                            01
+                        </h3>
                         <h5>
-                            direct trading
+                            direct trade
                         </h5>
                         <p>
                             Buying spot coffees from warehouse in Bremen, Hamburg or Antwerpen. 
                         </p>
                     </PurposeCards>
                     <PurposeCards>
+                        <h3>
+                            02
+                        </h3>
                         <h5>
                             relationship trade
                         </h5>
@@ -170,8 +176,11 @@ const Home = () => {
                         </p>
                     </PurposeCards>
                     <PurposeCards>
+                        <h3>
+                            03
+                        </h3>
                         <h5>
-                            VCR trading
+                            VCR trade
                         </h5>
                         <p>
                             We function as intermediary curator connecting producer-consumer journey by enabling investments into particular projects. 
