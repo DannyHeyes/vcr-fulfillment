@@ -89,6 +89,10 @@
     margin-left: 20px;
   }
 
+  .navLinksClosed li:hover {
+    cursor: pointer;
+  }
+
   .burgerDiv {
     display: none;
   }
