@@ -1,0 +1,194 @@
+.aboutUs {
+  height: 1450px;
+  margin-top: 100px;
+}
+
+.aboutUsContent {
+  position: relative;
+}
+
+.designStudio,
+.virtualRoastery {
+  width: 100%;
+  max-width: 327px;
+}
+
+.designStudio h5,
+.virtualRoastery h5 {
+  font-family: var(--body-font-family);
+  font-size: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  margin-bottom: 20px;
+}
+
+.designStudio p,
+.virtualRoastery p {
+  font-family: var(--body-font-family);
+  line-height: 1.8;
+  font-size: 14px;
+}
+
+.designImg {
+  height: 397px;
+  width: 100%;
+  max-width: 326px;
+  background-image: url("../../../assets/mobile-design-office.png");
+
+  float: right;
+}
+
+.designQuote {
+  width: 294px;
+  padding-top: 10px;
+
+  clear: right;
+}
+
+.designQuote p {
+  font-family: var(--heading-font-family);
+  font-size: 40px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+/* ----------------- 600px BREAKPOINT ----------------*/
+
+@media screen and (min-width: 600px) {
+  .designStudio {
+    position: relative;
+    left: 8%;
+  }
+
+  .designQuote {
+    width: 360px;
+    position: relative;
+    left: 5%;
+    bottom: 50px;
+  }
+
+  .designQuote p {
+    font-size: 50px;
+
+    margin-bottom: 0;
+  }
+
+  .virtualRoastery {
+    position: relative;
+    bottom: 30px;
+    float: right;
+  }
+
+  .virtualRoastery h5 {
+    margin-top: 0;
+  }
+}
+
+/* ----------------- 768px BREAKPOINT ----------------*/
+
+@media screen and (min-width: 768px) {
+  .designImg {
+    max-width: 460px;
+    height: 600px;
+
+    background-image: url("../../../assets/desktop-design-office.png");
+    background-size: cover;
+
+    position: relative;
+    right: 5%;
+  }
+
+  .designQuote {
+    width: 440px;
+  }
+
+  .designQuote p {
+    font-size: 60px;
+  }
+
+  .virtualRoastery {
+    right: 8%;
+    bottom: 50px;
+  }
+}
+
+/* ----------------- 1000px BREAKPOINT ----------------*/
+
+@media screen and (min-width: 1000px) {
+  .designStudio,
+  .virtualRoastery {
+    max-width: 400px;
+  }
+
+  .designStudio h5,
+  .virtualRoastery h5 {
+    font-size: 32px;
+  }
+
+  .designStudio p,
+  .virtualRoastery p {
+    font-size: 15px;
+  }
+
+  .designQuote {
+    width: 480px;
+  }
+
+  .designQuote p {
+    font-size: 70px;
+  }
+}
+
+/* ----------------- 1200px BREAKPOINT ----------------*/
+
+@media screen and (min-width: 1200px) {
+  .aboutUs {
+    height: 1600px;
+  }
+
+  .designStudio,
+  .virtualRoastery {
+    max-width: 480px;
+  }
+
+  .designStudio h5,
+  .virtualRoastery h5 {
+    font-size: 40px;
+  }
+
+  .designStudio p,
+  .virtualRoastery p {
+    width: 80%;
+  }
+
+  .designStudio {
+    position: absolute;
+    top: 50px;
+  }
+
+  .virtualRoastery {
+    float: unset;
+    position: absolute;
+    top: 1050px;
+    left: 55%;
+  }
+
+  .designQuote {
+    width: 650px;
+    bottom: 80px;
+
+    position: absolute;
+    top: 450px;
+  }
+
+  .designQuote p {
+    font-size: 90px;
+  }
+
+  .designImg {
+    position: absolute;
+    left: 52%;
+    top: 100px;
+  }
+}

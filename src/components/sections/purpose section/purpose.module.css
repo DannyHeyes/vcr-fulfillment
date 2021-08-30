@@ -1,0 +1,49 @@
+.ourPurpose {
+  margin-top: 100px;
+
+  clear: right;
+}
+
+.ourPurpose p {
+  font-family: var(--body-font-family);
+  font-size: 14px;
+  max-width: 800px;
+  line-height: 1.8;
+}
+
+.purposeCardWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  margin: 50px 0;
+}
+
+/* ----------------- 1000px BREAKPOINT ----------------*/
+
+@media screen and (min-width: 1000px) {
+  .ourPurpose p {
+    font-size: 15px;
+  }
+}
+
+/* ----------------- 1200px BREAKPOINT ----------------*/
+
+@media screen and (min-width: 1200px) {
+  .ourPurpose {
+    height: 650px;
+  }
+
+  .purposeCardWrapper {
+    flex-direction: row;
+    align-items: unset;
+  }
+}
+
+/* ----------------- 1440px BREAKPOINT ----------------*/
+
+@media screen and (min-width: 1440px) {
+  .purposeCardWrapper {
+    gap: 50px;
+  }
+}
